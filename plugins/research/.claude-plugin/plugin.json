@@ -1,6 +1,6 @@
 {
-  "name": "competitor-insights",
-  "description": "Competitive analysis and market research tool",
+  "name": "research",
+  "description": "Research commands for competitive analysis and market intelligence",
   "version": "1.0.0",
   "author": {
     "name": "Marcus Thor"

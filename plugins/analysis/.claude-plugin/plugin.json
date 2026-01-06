@@ -1,6 +1,6 @@
 {
-  "name": "design-toolkit",
-  "description": "Frontend design, UI/UX improvements, and documentation gap analysis",
+  "name": "analysis",
+  "description": "Code analysis commands for quality, improvements, performance, and security auditing with automatic ticket generation",
   "version": "1.0.0",
   "author": {
     "name": "Marcus Thor"

@@ -4,40 +4,32 @@ Collection of production-ready Claude Code plugins for development workflows.
 
 ## 📦 Available Plugins
 
-### ⚡ Coco - Command Suite
-Unified command interface with 7 slash commands:
-- **Analysis**: `/coco:analysis:code-quality`, `/coco:analysis:code-improvements`, `/coco:analysis:performance`, `/coco:analysis:security`
-- **Design**: `/coco:design:ux`, `/coco:design:documentation`
-- **Research**: `/coco:research:competitors`
+### 🔍 Analysis
+Code analysis commands and skills (4 commands + 4 skills):
+- Commands: `/analysis:code-quality`, `/analysis:code-improvements`, `/analysis:performance`, `/analysis:security`
+- Skills: code-quality, code-improvements, performance-optimization, security-hardening
 - **Auto-generates improvement tickets** in `improvements/` directory
 
+### 🎨 Design
+Design commands and skills (2 commands + 3 skills):
+- Commands: `/design:ux`, `/design:documentation`
+- Skills: frontend-design, ui-ux-improvements, documentation-gaps
+- **Auto-generates improvement tickets** for UX and documentation
+
+### 📊 Research
+Market research commands and skills (1 command + 1 skill):
+- Command: `/research:competitors`
+- Skill: competitor-analysis
+- User feedback mining and market gap identification
+
 ### 🗄️ Supabase Toolkit
-Complete Supabase development suite with 6 skills:
+Complete Supabase development suite (6 skills):
 - Database function best practices
 - Migration file generation
 - Edge Function templates
 - RLS policy optimization
 - Realtime implementation patterns
 - PostgreSQL style guide
-
-### 🔍 Code Analysis
-Code audit skills (4 skills):
-- Code quality & refactoring opportunities
-- Pattern-based improvements
-- Performance optimization
-- Security vulnerability detection
-
-### 🎨 Design Toolkit
-Design skills (3 skills):
-- Production-grade frontend design
-- UI/UX improvements (WCAG 2.1)
-- Documentation gap analysis
-
-### 📊 Competitor Insights
-Market research skill:
-- User feedback mining
-- Pain point identification
-- Market gap discovery
 
 ## 🚀 Installation
 
@@ -48,17 +40,14 @@ Market research skill:
 
 ### 2. Install Plugins
 ```bash
-# Install commands (recommended - includes all slash commands)
-/plugin install coco@cosmic-code-marketplace
-
-# Install skills
+# Install specific plugins
+/plugin install analysis@cosmic-code-marketplace
+/plugin install design@cosmic-code-marketplace
+/plugin install research@cosmic-code-marketplace
 /plugin install supabase-toolkit@cosmic-code-marketplace
-/plugin install code-analysis@cosmic-code-marketplace
-/plugin install design-toolkit@cosmic-code-marketplace
-/plugin install competitor-insights@cosmic-code-marketplace
 
 # Or install all
-/plugin install coco@cosmic-code-marketplace supabase-toolkit@cosmic-code-marketplace code-analysis@cosmic-code-marketplace design-toolkit@cosmic-code-marketplace competitor-insights@cosmic-code-marketplace
+/plugin install analysis@cosmic-code-marketplace design@cosmic-code-marketplace research@cosmic-code-marketplace supabase-toolkit@cosmic-code-marketplace
 ```
 
 ### 3. Verify Installation
@@ -80,22 +69,22 @@ Skills are triggered automatically based on context:
 ### Slash Commands (with Ticket Generation)
 ```bash
 # Generate code quality tickets
-/coco:analysis:code-quality
+/analysis:code-quality
 
 # Creates: improvements/code-quality/001-split-large-file.md
 #          improvements/code-quality/002-reduce-complexity.md
 #          etc.
 
 # Other commands
-/coco:analysis:performance       # Performance optimization
-/coco:analysis:security          # Security audit
-/coco:design:ux                  # UI/UX analysis
-/coco:research:competitors       # Competitive analysis
+/analysis:performance       # Performance optimization
+/analysis:security          # Security audit
+/design:ux                  # UI/UX analysis
+/research:competitors       # Competitive analysis
 ```
 
 ## 🎫 Ticket Workflow
 
-Commands in `coco` plugin generate individual ticket files:
+Commands generate individual ticket files:
 
 ```
 improvements/
@@ -132,7 +121,7 @@ Use tickets to:
 /plugin marketplace add marcusthor/cosmic-code-marketplace
 
 # Install desired plugins
-/plugin install coco@cosmic-code-marketplace
+/plugin install analysis@cosmic-code-marketplace
 ```
 
 ### Project-specific plugins
@@ -148,8 +137,9 @@ Add to `.claude/settings.json`:
     }
   },
   "enabledPlugins": {
-    "coco@cosmic-code-marketplace": true,
-    "code-analysis@cosmic-code-marketplace": true,
+    "analysis@cosmic-code-marketplace": true,
+    "design@cosmic-code-marketplace": true,
+    "research@cosmic-code-marketplace": true,
     "supabase-toolkit@cosmic-code-marketplace": true
   }
 }
