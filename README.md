@@ -37,7 +37,7 @@ Market research and competitive analysis:
 
 ### 1. Add Marketplace
 ```bash
-/plugin marketplace add username/claude-marketplace
+/plugin marketplace add marcusthor/claude-marketplace
 ```
 
 ### 2. Install Plugins
@@ -120,7 +120,7 @@ Use tickets to:
 ### Clone to another machine
 ```bash
 # Add marketplace once
-/plugin marketplace add username/claude-marketplace
+/plugin marketplace add marcusthor/claude-marketplace
 
 # Install desired plugins
 /plugin install supabase-toolkit@claude-marketplace
@@ -134,7 +134,7 @@ Add to `.claude/settings.json`:
     "claude-marketplace": {
       "source": {
         "source": "github",
-        "repo": "username/claude-marketplace"
+        "repo": "marcusthor/claude-marketplace"
       }
     }
   },
