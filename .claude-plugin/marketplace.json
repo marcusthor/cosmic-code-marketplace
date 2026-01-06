@@ -12,8 +12,7 @@
       "version": "1.0.0",
       "author": {
         "name": "Marcus Thor"
-      },
-      "tags": ["supabase", "postgresql", "database", "realtime"]
+      }
     },
     {
       "name": "code-analysis",
@@ -22,8 +21,7 @@
       "version": "1.0.0",
       "author": {
         "name": "Marcus Thor"
-      },
-      "tags": ["code-quality", "refactoring", "performance", "security"]
+      }
     },
     {
       "name": "design-toolkit",
@@ -32,8 +30,7 @@
       "version": "1.0.0",
       "author": {
         "name": "Marcus Thor"
-      },
-      "tags": ["design", "ux", "accessibility", "documentation"]
+      }
     },
     {
       "name": "competitor-insights",
@@ -42,8 +39,7 @@
       "version": "1.0.0",
       "author": {
         "name": "Marcus Thor"
-      },
-      "tags": ["research", "competitors", "market-analysis"]
+      }
     }
   ]
 }
