@@ -40,6 +40,15 @@
       "author": {
         "name": "Marcus Thor"
       }
+    },
+    {
+      "name": "development",
+      "source": "./plugins/development",
+      "description": "Development tools for creating and managing Claude Code skills with templates, validation, and packaging",
+      "version": "1.0.0",
+      "author": {
+        "name": "Marcus Thor"
+      }
     }
   ]
 }

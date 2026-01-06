@@ -31,6 +31,14 @@ Complete Supabase development suite (6 skills):
 - Realtime implementation patterns
 - PostgreSQL style guide
 
+### 🛠️ Development
+Skill development toolkit (1 skill):
+- Skill: skill-creator
+- Create new Claude Code skills with proper structure
+- Initialize skills with templates and examples
+- Validate and package skills for distribution
+- Bundled scripts: `init_skill.py`, `package_skill.py`, `quick_validate.py`
+
 ## 🚀 Installation
 
 ### 1. Add Marketplace
@@ -45,9 +53,10 @@ Complete Supabase development suite (6 skills):
 /plugin install design@cosmic-code-marketplace
 /plugin install research@cosmic-code-marketplace
 /plugin install supabase-toolkit@cosmic-code-marketplace
+/plugin install development@cosmic-code-marketplace
 
 # Or install all
-/plugin install analysis@cosmic-code-marketplace design@cosmic-code-marketplace research@cosmic-code-marketplace supabase-toolkit@cosmic-code-marketplace
+/plugin install analysis@cosmic-code-marketplace design@cosmic-code-marketplace research@cosmic-code-marketplace supabase-toolkit@cosmic-code-marketplace development@cosmic-code-marketplace
 ```
 
 ### 3. Verify Installation
@@ -64,6 +73,7 @@ Skills are triggered automatically based on context:
 "How can I improve performance?"       → performance-optimization skill
 "Create a Supabase migration"          → supabase-migrations skill
 "Review accessibility compliance"      → ui-ux-improvements skill
+"Help me create a new skill"           → skill-creator skill
 ```
 
 ### Slash Commands (with Ticket Generation)
@@ -140,7 +150,8 @@ Add to `.claude/settings.json`:
     "analysis@cosmic-code-marketplace": true,
     "design@cosmic-code-marketplace": true,
     "research@cosmic-code-marketplace": true,
-    "supabase-toolkit@cosmic-code-marketplace": true
+    "supabase-toolkit@cosmic-code-marketplace": true,
+    "development@cosmic-code-marketplace": true
   }
 }
 ```
