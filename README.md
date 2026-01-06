@@ -4,6 +4,13 @@ Collection of production-ready Claude Code plugins for development workflows.
 
 ## 📦 Available Plugins
 
+### ⚡ Coco - Command Suite
+Unified command interface with 7 slash commands:
+- **Analysis**: `/coco:analysis:code-quality`, `/coco:analysis:code-improvements`, `/coco:analysis:performance`, `/coco:analysis:security`
+- **Design**: `/coco:design:ux`, `/coco:design:documentation`
+- **Research**: `/coco:research:competitors`
+- **Auto-generates improvement tickets** in `improvements/` directory
+
 ### 🗄️ Supabase Toolkit
 Complete Supabase development suite with 6 skills:
 - Database function best practices
@@ -14,21 +21,20 @@ Complete Supabase development suite with 6 skills:
 - PostgreSQL style guide
 
 ### 🔍 Code Analysis
-Comprehensive code audit toolkit with 4 skills + 4 commands:
+Code audit skills (4 skills):
 - Code quality & refactoring opportunities
 - Pattern-based improvements
 - Performance optimization
 - Security vulnerability detection
-- **Auto-generates improvement tickets** in `improvements/` directory
 
 ### 🎨 Design Toolkit
-Frontend design and UX optimization with 3 skills + 2 commands:
+Design skills (3 skills):
 - Production-grade frontend design
 - UI/UX improvements (WCAG 2.1)
 - Documentation gap analysis
 
 ### 📊 Competitor Insights
-Market research and competitive analysis:
+Market research skill:
 - User feedback mining
 - Pain point identification
 - Market gap discovery
@@ -42,14 +48,17 @@ Market research and competitive analysis:
 
 ### 2. Install Plugins
 ```bash
-# Install specific plugins
+# Install commands (recommended - includes all slash commands)
+/plugin install coco@cosmic-code-marketplace
+
+# Install skills
 /plugin install supabase-toolkit@cosmic-code-marketplace
 /plugin install code-analysis@cosmic-code-marketplace
 /plugin install design-toolkit@cosmic-code-marketplace
 /plugin install competitor-insights@cosmic-code-marketplace
 
 # Or install all
-/plugin install supabase-toolkit@cosmic-code-marketplace code-analysis@cosmic-code-marketplace design-toolkit@cosmic-code-marketplace competitor-insights@cosmic-code-marketplace
+/plugin install coco@cosmic-code-marketplace supabase-toolkit@cosmic-code-marketplace code-analysis@cosmic-code-marketplace design-toolkit@cosmic-code-marketplace competitor-insights@cosmic-code-marketplace
 ```
 
 ### 3. Verify Installation
@@ -71,22 +80,22 @@ Skills are triggered automatically based on context:
 ### Slash Commands (with Ticket Generation)
 ```bash
 # Generate code quality tickets
-/code-analysis:analyze-code-quality
+/coco:analysis:code-quality
 
 # Creates: improvements/code-quality/001-split-large-file.md
 #          improvements/code-quality/002-reduce-complexity.md
 #          etc.
 
 # Other commands
-/code-analysis:analyze-performance
-/code-analysis:analyze-security
-/design-toolkit:analyze-ux
-/competitor-insights:analyze-competitors
+/coco:analysis:performance       # Performance optimization
+/coco:analysis:security          # Security audit
+/coco:design:ux                  # UI/UX analysis
+/coco:research:competitors       # Competitive analysis
 ```
 
 ## 🎫 Ticket Workflow
 
-Commands in `code-analysis` plugin generate individual ticket files:
+Commands in `coco` plugin generate individual ticket files:
 
 ```
 improvements/
@@ -123,7 +132,7 @@ Use tickets to:
 /plugin marketplace add marcusthor/cosmic-code-marketplace
 
 # Install desired plugins
-/plugin install supabase-toolkit@cosmic-code-marketplace
+/plugin install coco@cosmic-code-marketplace
 ```
 
 ### Project-specific plugins
@@ -139,6 +148,7 @@ Add to `.claude/settings.json`:
     }
   },
   "enabledPlugins": {
+    "coco@cosmic-code-marketplace": true,
     "code-analysis@cosmic-code-marketplace": true,
     "supabase-toolkit@cosmic-code-marketplace": true
   }

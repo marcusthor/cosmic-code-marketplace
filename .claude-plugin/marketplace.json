@@ -6,6 +6,15 @@
   },
   "plugins": [
     {
+      "name": "coco",
+      "source": "./plugins/coco",
+      "description": "Cosmic Code command suite for code analysis, design improvements, and competitive research",
+      "version": "1.0.0",
+      "author": {
+        "name": "Marcus Thor"
+      }
+    },
+    {
       "name": "supabase-toolkit",
       "source": "./plugins/supabase-toolkit",
       "description": "Complete Supabase development toolkit with DB functions, migrations, Edge Functions, RLS policies, and Realtime",
@@ -17,7 +26,7 @@
     {
       "name": "code-analysis",
       "source": "./plugins/code-analysis",
-      "description": "Comprehensive code analysis suite covering quality, improvements, performance, and security",
+      "description": "Code analysis skills for quality, improvements, performance, and security auditing",
       "version": "1.0.0",
       "author": {
         "name": "Marcus Thor"
@@ -26,7 +35,7 @@
     {
       "name": "design-toolkit",
       "source": "./plugins/design-toolkit",
-      "description": "Frontend design, UI/UX improvements, and documentation gap analysis",
+      "description": "Design skills for frontend development, UI/UX analysis, and documentation review",
       "version": "1.0.0",
       "author": {
         "name": "Marcus Thor"
@@ -35,7 +44,7 @@
     {
       "name": "competitor-insights",
       "source": "./plugins/competitor-insights",
-      "description": "Competitive analysis and market research tool",
+      "description": "Competitive analysis skill for market research and user feedback mining",
       "version": "1.0.0",
       "author": {
         "name": "Marcus Thor"

@@ -1,0 +1,11 @@
+{
+  "name": "coco",
+  "description": "Cosmic Code command suite for code analysis, design improvements, and competitive research",
+  "version": "1.0.0",
+  "author": {
+    "name": "Marcus Thor"
+  },
+  "homepage": "https://github.com/marcusthor/cosmic-code-marketplace",
+  "repository": "https://github.com/marcusthor/cosmic-code-marketplace",
+  "license": "MIT"
+}
