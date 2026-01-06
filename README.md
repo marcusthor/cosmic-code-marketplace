@@ -32,8 +32,17 @@ Complete Supabase development suite (6 skills):
 - PostgreSQL style guide
 
 ### 🛠️ Development
-Skill development toolkit (1 skill):
-- Skill: skill-creator
+Development toolkit (1 command + 2 skills):
+- Command: `/development:commit`
+- Skills: commit, skill-creator
+
+**Commit Skill:**
+- Conventional Commits format: `<type>(<scope>): <description>`
+- Analyzes staged changes and suggests appropriate commit type
+- Suggests splitting unrelated changes into atomic commits
+- Supports `--no-verify` to skip pre-commit hooks
+
+**Skill Creator:**
 - Create new Claude Code skills with proper structure
 - Initialize skills with templates and examples
 - Validate and package skills for distribution
@@ -74,21 +83,25 @@ Skills are triggered automatically based on context:
 "Create a Supabase migration"          → supabase-migrations skill
 "Review accessibility compliance"      → ui-ux-improvements skill
 "Help me create a new skill"           → skill-creator skill
+"Commit these changes"                 → commit skill
 ```
 
-### Slash Commands (with Ticket Generation)
+### Slash Commands
 ```bash
-# Generate code quality tickets
-/analysis:code-quality
+# Git commits (Conventional Commits format)
+/development:commit              # Analyze and commit staged changes
+/development:commit --no-verify  # Skip pre-commit hooks
 
-# Creates: improvements/code-quality/001-split-large-file.md
-#          improvements/code-quality/002-reduce-complexity.md
-#          etc.
-
-# Other commands
+# Analysis commands (generate tickets)
+/analysis:code-quality      # Code quality analysis
 /analysis:performance       # Performance optimization
 /analysis:security          # Security audit
+
+# Design commands
 /design:ux                  # UI/UX analysis
+/design:documentation       # Documentation gaps
+
+# Research commands
 /research:competitors       # Competitive analysis
 ```
 
