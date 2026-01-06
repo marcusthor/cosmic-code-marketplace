@@ -1,11 +1,11 @@
 ---
-description: Create well-formatted commits with conventional commit messages and emoji
+description: Create well-formatted commits following Conventional Commits specification
 argument-hint: [--no-verify]
 ---
 
 # Git Commit
 
-I'll create a well-formatted commit following conventional commit standards.
+I'll create a well-formatted commit following the Conventional Commits specification.
 
 ## Step 1: Analyze Current State
 
@@ -25,7 +25,7 @@ Based on the analysis:
 
 ## Step 3: Create Commit
 
-Format: `<emoji> <type>: <description>`
+Format: `<type>(<scope>): <description>`
 
 - Use imperative mood ("add" not "added")
 - Keep first line under 72 characters

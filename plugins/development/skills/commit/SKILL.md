@@ -1,6 +1,6 @@
 ---
 name: commit
-description: Creates well-formatted git commits with conventional commit messages and emoji. This skill should be used when committing code changes, creating atomic commits, or following conventional commit standards.
+description: Creates well-formatted git commits following Conventional Commits specification. This skill should be used when committing code changes, creating atomic commits, or following conventional commit standards.
 allowed-tools:
   - Bash(git add:*)
   - Bash(git status:*)
@@ -11,75 +11,39 @@ allowed-tools:
 
 # Git Commit Skill
 
-Creates well-formatted commits following conventional commit standards with emoji prefixes.
+Creates well-formatted commits following the Conventional Commits specification.
 
 ## Commit Format
 
 ```
-<emoji> <type>: <description>
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer(s)]
 ```
 
-**Example:** `✨ feat: add user authentication flow`
+**Examples:**
+- `feat: add user authentication flow`
+- `fix(auth): resolve token expiration issue`
+- `docs(readme): update installation instructions`
+- `refactor(api)!: change response format` (breaking change)
 
 ## Commit Types
 
-| Type | Emoji | Description |
-|------|-------|-------------|
-| `feat` | ✨ | New feature |
-| `fix` | 🐛 | Bug fix |
-| `docs` | 📝 | Documentation |
-| `style` | 💄 | Formatting (no code change) |
-| `refactor` | ♻️ | Code restructuring |
-| `perf` | ⚡ | Performance improvement |
-| `test` | ✅ | Tests |
-| `chore` | 🔧 | Build/tools |
-
-## Extended Emoji Map
-
-| Emoji | Use Case |
-|-------|----------|
-| 🚀 | CI/CD |
-| 🚨 | Fix warnings |
-| 🔒️ | Security |
-| 🚚 | Move/rename files |
-| 🏗️ | Architecture changes |
-| ➕ | Add dependency |
-| ➖ | Remove dependency |
-| 🌱 | Seed data |
-| 🧑‍💻 | Developer experience |
-| 🏷️ | Types |
-| 👔 | Business logic |
-| 🚸 | UX improvements |
-| 🩹 | Minor fix |
-| 🥅 | Error handling |
-| 🔥 | Remove code/files |
-| 🎨 | Structure/format |
-| 🚑️ | Hotfix |
-| 🎉 | Initial commit |
-| 🔖 | Release/version tag |
-| 🚧 | Work in progress |
-| 💚 | Fix CI |
-| 📌 | Pin dependencies |
-| 👷 | CI build system |
-| 📈 | Analytics |
-| ✏️ | Fix typos |
-| ⏪️ | Revert changes |
-| 📄 | License |
-| 💥 | Breaking changes |
-| 🍱 | Assets |
-| ♿️ | Accessibility |
-| 💡 | Comments |
-| 🗃️ | Database |
-| 🔊 | Add logs |
-| 🔇 | Remove logs |
-| 🙈 | Gitignore |
-| 📸 | Snapshots |
-| ⚗️ | Experiments |
-| 🚩 | Feature flags |
-| 💫 | Animations |
-| ⚰️ | Dead code removal |
-| 🦺 | Validation |
-| ✈️ | Offline support |
+| Type | Description |
+|------|-------------|
+| `feat` | New feature |
+| `fix` | Bug fix |
+| `docs` | Documentation only |
+| `style` | Formatting, whitespace (no code change) |
+| `refactor` | Code restructuring (no feature/fix) |
+| `perf` | Performance improvement |
+| `test` | Adding or updating tests |
+| `build` | Build system or dependencies |
+| `ci` | CI configuration |
+| `chore` | Other changes (tooling, etc.) |
+| `revert` | Revert a previous commit |
 
 ## Commit Process
 
@@ -120,15 +84,30 @@ Only stage related changes. If multiple unrelated changes exist, suggest splitti
 ### Step 5: Create Commit
 
 ```bash
-git commit -m "<emoji> <type>: <description>"
+git commit -m "<type>(<scope>): <description>"
 ```
 
 ## Commit Message Rules
 
 1. **Imperative mood** - "add" not "added"
 2. **First line < 72 characters**
-3. **Atomic commits** - Single purpose per commit
-4. **Split unrelated changes** - Don't mix features with fixes
+3. **Lowercase** - Type and description in lowercase
+4. **No period** - Don't end the subject line with a period
+5. **Atomic commits** - Single purpose per commit
+6. **Split unrelated changes** - Don't mix features with fixes
+
+## Scope (Optional)
+
+The scope provides context about what part of the codebase is affected:
+- `feat(auth)` - Authentication module
+- `fix(api)` - API layer
+- `docs(readme)` - README file
+
+## Breaking Changes
+
+Indicate breaking changes with `!` before the colon or in the footer:
+- `feat(api)!: change authentication method`
+- Or add `BREAKING CHANGE:` in the commit body
 
 ## Split Criteria
 
