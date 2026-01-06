@@ -1,0 +1,12 @@
+{
+  "name": "supabase-toolkit",
+  "description": "Complete Supabase development toolkit with DB functions, migrations, Edge Functions, RLS policies, and Realtime",
+  "version": "1.0.0",
+  "author": {
+    "name": "Marcus Thor"
+  },
+  "homepage": "https://github.com/username/claude-marketplace",
+  "repository": "https://github.com/username/claude-marketplace",
+  "license": "MIT",
+  "tags": ["supabase", "postgresql", "database", "realtime"]
+}

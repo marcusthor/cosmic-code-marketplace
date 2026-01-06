@@ -1,0 +1,12 @@
+{
+  "name": "code-analysis",
+  "description": "Comprehensive code analysis suite covering quality, improvements, performance, and security. Automatically generates improvement tickets in improvements/ directory.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Marcus Thor"
+  },
+  "homepage": "https://github.com/username/claude-marketplace",
+  "repository": "https://github.com/username/claude-marketplace",
+  "license": "MIT",
+  "tags": ["code-quality", "refactoring", "performance", "security", "tickets"]
+}

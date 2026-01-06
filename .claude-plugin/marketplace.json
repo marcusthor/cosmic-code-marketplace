@@ -1,0 +1,49 @@
+{
+  "name": "claude-marketplace",
+  "owner": {
+    "name": "Marcus Thor",
+    "email": "your.email@example.com"
+  },
+  "plugins": [
+    {
+      "name": "supabase-toolkit",
+      "source": "./plugins/supabase-toolkit",
+      "description": "Complete Supabase development toolkit with DB functions, migrations, Edge Functions, RLS policies, and Realtime",
+      "version": "1.0.0",
+      "author": {
+        "name": "Marcus Thor"
+      },
+      "tags": ["supabase", "postgresql", "database", "realtime"]
+    },
+    {
+      "name": "code-analysis",
+      "source": "./plugins/code-analysis",
+      "description": "Comprehensive code analysis suite covering quality, improvements, performance, and security",
+      "version": "1.0.0",
+      "author": {
+        "name": "Marcus Thor"
+      },
+      "tags": ["code-quality", "refactoring", "performance", "security"]
+    },
+    {
+      "name": "design-toolkit",
+      "source": "./plugins/design-toolkit",
+      "description": "Frontend design, UI/UX improvements, and documentation gap analysis",
+      "version": "1.0.0",
+      "author": {
+        "name": "Marcus Thor"
+      },
+      "tags": ["design", "ux", "accessibility", "documentation"]
+    },
+    {
+      "name": "competitor-insights",
+      "source": "./plugins/competitor-insights",
+      "description": "Competitive analysis and market research tool",
+      "version": "1.0.0",
+      "author": {
+        "name": "Marcus Thor"
+      },
+      "tags": ["research", "competitors", "market-analysis"]
+    }
+  ]
+}

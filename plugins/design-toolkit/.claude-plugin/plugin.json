@@ -1,0 +1,12 @@
+{
+  "name": "design-toolkit",
+  "description": "Frontend design, UI/UX improvements, and documentation gap analysis",
+  "version": "1.0.0",
+  "author": {
+    "name": "Marcus Thor"
+  },
+  "homepage": "https://github.com/username/claude-marketplace",
+  "repository": "https://github.com/username/claude-marketplace",
+  "license": "MIT",
+  "tags": ["design", "ux", "accessibility", "documentation"]
+}
