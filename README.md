@@ -1,6 +1,6 @@
-# Claude Code Marketplace
+# Cosmic Code Marketplace
 
-Collection of production-ready Claude Code skills and slash commands for development workflows.
+Collection of production-ready Claude Code plugins for development workflows.
 
 ## 📦 Available Plugins
 
@@ -37,19 +37,19 @@ Market research and competitive analysis:
 
 ### 1. Add Marketplace
 ```bash
-/plugin marketplace add marcusthor/claude-marketplace
+/plugin marketplace add marcusthor/cosmic-code-marketplace
 ```
 
 ### 2. Install Plugins
 ```bash
 # Install specific plugins
-/plugin install supabase-toolkit@claude-marketplace
-/plugin install code-analysis@claude-marketplace
-/plugin install design-toolkit@claude-marketplace
-/plugin install competitor-insights@claude-marketplace
+/plugin install supabase-toolkit@cosmic-code-marketplace
+/plugin install code-analysis@cosmic-code-marketplace
+/plugin install design-toolkit@cosmic-code-marketplace
+/plugin install competitor-insights@cosmic-code-marketplace
 
 # Or install all
-/plugin install supabase-toolkit@claude-marketplace code-analysis@claude-marketplace design-toolkit@claude-marketplace competitor-insights@claude-marketplace
+/plugin install supabase-toolkit@cosmic-code-marketplace code-analysis@cosmic-code-marketplace design-toolkit@cosmic-code-marketplace competitor-insights@cosmic-code-marketplace
 ```
 
 ### 3. Verify Installation
@@ -120,10 +120,10 @@ Use tickets to:
 ### Clone to another machine
 ```bash
 # Add marketplace once
-/plugin marketplace add marcusthor/claude-marketplace
+/plugin marketplace add marcusthor/cosmic-code-marketplace
 
 # Install desired plugins
-/plugin install supabase-toolkit@claude-marketplace
+/plugin install supabase-toolkit@cosmic-code-marketplace
 ```
 
 ### Project-specific plugins
@@ -131,16 +131,16 @@ Add to `.claude/settings.json`:
 ```json
 {
   "extraKnownMarketplaces": {
-    "claude-marketplace": {
+    "cosmic-code-marketplace": {
       "source": {
         "source": "github",
-        "repo": "marcusthor/claude-marketplace"
+        "repo": "marcusthor/cosmic-code-marketplace"
       }
     }
   },
   "enabledPlugins": {
-    "code-analysis@claude-marketplace": true,
-    "supabase-toolkit@claude-marketplace": true
+    "code-analysis@cosmic-code-marketplace": true,
+    "supabase-toolkit@cosmic-code-marketplace": true
   }
 }
 ```

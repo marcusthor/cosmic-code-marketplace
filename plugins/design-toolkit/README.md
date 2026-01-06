@@ -87,5 +87,5 @@ Documentation gap analysis with tickets.
 ## Installation
 
 ```bash
-/plugin install design-toolkit@claude-marketplace
+/plugin install design-toolkit@cosmic-code-marketplace
 ```

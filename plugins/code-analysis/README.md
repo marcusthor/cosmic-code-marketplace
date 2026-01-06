@@ -114,5 +114,5 @@ Pattern-based improvement suggestions.
 ## Installation
 
 ```bash
-/plugin install code-analysis@claude-marketplace
+/plugin install code-analysis@cosmic-code-marketplace
 ```

@@ -73,5 +73,5 @@ Then conducts automated research and generates comprehensive report.
 ## Installation
 
 ```bash
-/plugin install competitor-insights@claude-marketplace
+/plugin install competitor-insights@cosmic-code-marketplace
 ```

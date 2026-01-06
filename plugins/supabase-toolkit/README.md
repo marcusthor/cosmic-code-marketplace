@@ -85,5 +85,5 @@ Skills are automatically invoked based on context:
 ## Installation
 
 ```bash
-/plugin install supabase-toolkit@claude-marketplace
+/plugin install supabase-toolkit@cosmic-code-marketplace
 ```
