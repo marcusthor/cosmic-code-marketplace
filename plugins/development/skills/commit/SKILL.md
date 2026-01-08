@@ -207,8 +207,8 @@ Create commit messages that future developers will appreciate when doing code ar
 
 ## Important Notes
 
-Use heredoc for multi-line commits - Ensures proper formatting
-Reference Jira tickets when found in branch name
-Be specific in technical summaries
-Think about the reader - someone debugging this code in 6 months
-No co-authors - Never add "Co-Authored-By" or mention Claude Code
+- Use heredoc for multi-line commits - Ensures proper formatting
+- Reference Jira tickets when found in branch name
+- Be specific in technical summaries
+- Think about the reader - someone debugging this code in 6 months
+- No co-authors - Never add "Co-Authored-By" or mention Claude Code
